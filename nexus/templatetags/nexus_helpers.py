@@ -13,6 +13,11 @@ def nexus_media_prefix():
 register.simple_tag(nexus_media_prefix)
 
 
+def nexus_csrf_cookie_name():
+    return conf.CSRF_COOKIE_NAME
+register.simple_tag(nexus_csrf_cookie_name)
+
+
 def nexus_version():
     return nexus.VERSION
 register.simple_tag(nexus_version)
